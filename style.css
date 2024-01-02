@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:wght@500;700&family=Source+Code+Pro:wght@300&family=Ubuntu:ital@1&display=swap');
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar styles */
+.navbar {
+  /* Your existing styles for the navbar go here */
+
+  /* Add transition for smooth effect */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar hover effect */
+.navbar:hover {
+  background-color: #333; /* Change this to the color you want on hover */
+  cursor: pointer;
+}
+
+/* Active link style */
+.navbar .navbar-brand.active, .navbar .navbar-brand.active:hover {
+  background-color: yellow; /* Change this to the color you want for the active link and its hover effect */
+  color: #333; /* Change this to the text color for the active link */
+}
+
+/* Additional styling for navbar links */
+.navbar .navbar-brand {
+  /* Your existing styles for navbar links go here */
+  color: #fff; /* Set the default text color for navbar links */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Hover effect for navbar links */
+.navbar .navbar-brand:hover {
+  color: yellow; /* Change this to the color you want on hover */
+}
+
+/* Active tab style */
+.navbar .navbar-brand.active-tab,
+.navbar .navbar-brand.active-tab:hover {
+  color: yellow; /* Change this to the color you want for the active tab and its hover effect */
+}
+
+
+.container-fluid b {
+font-weight: bolder;
+color: orange;
+}
+
+.container-fluid h1{
+font-family: 'Anton', sans-serif;
+color: white;
+font-size: 25px;
+margin-top: 12px;
+} 
+
+
+.banner-card{
+    position: relative;
+}
+.banner-card img{
+    width: 100vw;
+    height: auto;
+
+}
+
+.banner-text{
+    position: absolute;
+    top: 25%;
+    color: white;
+    margin-left: 95px;
+}
+.banner-text h3 b{
+    color: orangered;
+}
+.banner-text h3 {
+    font-size: 50px;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .static-text{
+    font-size: 65px;
+    color: white;
+
+}
+
+.wrapper .dyamic-text{
+margin-left: 0px;
+height: 90px;
+line-height: 90px;
+overflow: hidden;
+
+}
+
+.dyamic-text li{
+    color:dodgerblue;
+    list-style: none;
+    font-size: 65px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-left: -14px;
+    position: relative;
+    top: 0;
+    animation: slide 20s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+     top: -360px;
+
+    }
+}
+
+.dyamic-text li span{
+    position: relative;
+} 
+
+.dyamic-text li span::after{
+content: "";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: #000;
+/*border-left: 2px solid aquamarine; */
+animation: typing 5s steps(10) infinite;
+
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -32px 0 35px; 
+    }
+}
+
+
+/*.vedio{
+    resolution: 1000%;
+    width: 100%;
+} */
+
+.container h3{
+    margin-top: 100px;
+    margin-left:auto ;
+    margin-right: auto;
+    color: gold;
+    font-size: 15px;
+}
+
+.container  .col-md-12 h4{
+    text-align: center;
+}
+
+.container  .col-md-12 p{
+    text-align: center;
+}
+
+.row{
+  
+  color: white;
+}
+
+.col-md-6 p{
+    margin-top: 40px;
+    text-align: justify;
+}
+.col-md-6 img{
+    margin-top: 55px;
+margin-left: 68px;
+
+clip-path: circle(50.0% at 50% 50%);
+
+}
+
+
+.col-md-6 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+}
+
+ th{
+  text-align: left;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+
+}
+
+
+
+tr:first-child th,
+tr:nth-child(2) td {
+    border-bottom: 1px solid #f0efef;
+}
+
+.container h2{
+    margin-top: 100px;
+    margin-left:auto ;
+    margin-right: auto;
+    color: gold;
+    font-size: 15px;
+}
+.col-md-6 h5{
+    margin-top: 30px;
+    margin-bottom: -1.5rem;
+    margin-left: 0px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+
+.main-container {
+    margin-top: 100px;
+    background-image: url(poll.jpg); /* Replace 'your-background-image.jpg' with the actual image file path */
+    background-size: cover;
+    background-position: center;
+    
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container {
+    text-align: center;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+ .icon img{
+    width: 50px;
+    height: 50px;
+
+ }
+
+ .container2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .box {
+    width: 30%;
+    padding: 20px;
+    background-color: #777676;
+    margin: 10px;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .box:hover {
+    background-color: #777676 ;
+  }
+
+  .box h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    font-size: 2.5em;
+    color: #333;
+    position: relative;
+    animation: slide-up 0.5s ease-in-out forwards;
+  }
+
+  .box h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(25, 25, 78);
+    text-align: center;
+  }
+
+  .box:hover h2 {
+    animation: slide-down 0.5s ease-in-out forwards;
+  }
+
+  .box p {
+    font-size: 1em;
+    color: #d8d8d8;
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+  .icon {
+    font-size: 2em;
+    transition: transform 0.6s;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.icon img{
+height: 75px;
+width: 75px;
+
+}
+
+  .box:hover img{
+  /* transform: rotate(180deg); */
+   transform: rotateY(180deg) ;
+  }
+
+  .contact-info {
+ 
+    padding: 20px;
+    border-radius: 10px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+}
+
+.row2.contact-info h6 {
+    color: #ffffff;
+    text-align: left;
+}
+
+.contact-info p {
+    color: #fdfeff;
+    text-align: left;
+}
+.social-icons {
+  margin-top: 60px;
+}
+.social-icons a {
+  margin-top: 15px;
+    margin-right: 15px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #efff0f;
+}
+
+.col-md-8 form {
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+.col-md-8 form label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+}
+
+
+.col-md-8 form input,
+.col-md-8 form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    background: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.col-md-8 form input:focus,
+.col-md-8 form textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.col-md-8 form button {
+    background-color: #ffbb29;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container .col-md-4{
+  margin-top: 50px;
+}
+.container .col-md-8{
+  margin-top: 50px;
+}
+
